@@ -1,0 +1,35 @@
+
+
+  #table-menu {
+    background-color: #5b5b5b;
+    height: 100vh;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    
+
+}
+
+#table-menu tr {
+    border-bottom:3px solid #b67171 ;
+    background-color: #b67171;
+}
+
+#table-menu tr:hover {
+    background-color: #5b5b5b;
+    cursor: pointer;
+}
+
+
+ .menu {
+    display: none;
+    color: aqua;
+}
+
+#table-menu:hover .menu {
+    display: table;
+    width: 250px;
+    height: 50px;
+}
