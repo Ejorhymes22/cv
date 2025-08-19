@@ -2,44 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkyTech - Cloud Storage</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <h1 class="logo">SkyTech</h1>
-      <ul class="nav-links">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h2>Secure Cloud Storage for Everyone</h2>
-      <p>Store your files safely and access them anywhere.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
-  </header>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendOperator('/')">÷</button>
+      <button class="btn" onclick="appendOperator('*')">×</button>
+      <button class="btn" onclick="appendOperator('-')">−</button>
 
-  <section class="features">
-    <div class="feature">
-      <h3>Easy to Use</h3>
-      <p>Simple interface designed for everyone.</p>
-    </div>
-    <div class="feature">
-      <h3>Mobile Friendly</h3>
-      <p>Access your files on the go.</p>
-    </div>
-    <div class="feature">
-      <h3>Secure</h3>
-      <p>Top-tier encryption keeps your data safe.</p>
-    </div>
-  </section>
+      <button class="btn" onclick="appendNumber('7')">7</button>
+      <button class="btn" onclick="appendNumber('8')">8</button>
+      <button class="btn" onclick="appendNumber('9')">9</button>
+      <button class="btn" onclick="appendOperator('+')">+</button>
 
-  <footer>
-    <p>&copy; 2025 SkyTech. All rights reserved.</p>
-  </footer>
+      <button class="btn" onclick="appendNumber('4')">4</button>
+      <button class="btn" onclick="appendNumber('5')">5</button>
+      <button class="btn" onclick="appendNumber('6')">6</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+
+      <button class="btn" onclick="appendNumber('1')">1</button>
+      <button class="btn" onclick="appendNumber('2')">2</button>
+      <button class="btn" onclick="appendNumber('3')">3</button>
+      <button class="btn" onclick="appendNumber('0')">0</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="btn" onclick="clearDisplay()">C</button>
+      <button class="btn" onclick="appendOperator('/')">÷</button>
+      <button class="btn" onclick="appendOperator('*')">×</button>
+      <button class="btn" onclick="appendOperator('-')">−</button>
+
+      <button class="btn" onclick="appendNumber('7')">7</button>
+      <button class="btn" onclick="appendNumber('8')">8</button>
+      <button class="btn" onclick="appendNumber('9')">9</button>
+      <button class="btn" onclick="appendOperator('+')">+</button>
+
+      <button class="btn" onclick="appendNumber('4')">4</button>
+      <button class="btn" onclick="appendNumber('5')">5</button>
+      <button class="btn" onclick="appendNumber('6')">6</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+
+      <button class="btn" onclick="appendNumber('1')">1</button>
+      <button class="btn" onclick="appendNumber('2')">2</button>
+      <button class="btn" onclick="appendNumber('3')">3</button>
+      <button class="btn" onclick="appendNumber('0')">0</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
